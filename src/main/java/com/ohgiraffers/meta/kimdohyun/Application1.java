@@ -1,6 +1,6 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.meta.kimdohyun;
 
-public class DoHyun {
+public class Application1 {
 
     public static void main(String[] args) {
 
