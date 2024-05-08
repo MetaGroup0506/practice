@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.meta.limsuyeon;
 
 public class Application1 {
 
@@ -14,6 +14,12 @@ public class Application1 {
          * 나누기한 몫 : 0
          * 나누기한 나머지 : 20
          * */
-        System.out.println("출력테스트");
+        int a = 20;
+        int b = 30;
+        System.out.println("더하기 결과 :" + (a + b));
+        System.out.println("빼기 결과 :" + (a - b));
+        System.out.println("곱하기 결과 : " + (a * b));// a 또는 b 중 하나를 실수형으로 변환하여 나누기
+        System.out.println("나누기 결과 : " + (a / b));
+        System.out.println("나누기한 나머지 : " + (a % b));
     }
 }
