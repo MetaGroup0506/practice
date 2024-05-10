@@ -6,6 +6,8 @@ public class Application2 {
 
         /* 계산기 프로그래밍 */
         checkMethod();
+        sumTwoNumber(10,20);
+        multiTwoNumber(10,20);
     }
 
 
