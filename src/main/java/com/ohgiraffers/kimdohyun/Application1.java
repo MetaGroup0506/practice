@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.kimdohyun;
 
 public class Application1 {
 
@@ -15,19 +15,13 @@ public class Application1 {
          * 나누기한 나머지 : 20
          * */
 
-         int a = 20;
-         int b = 30;
-         
-         //더하기
-         System.out.println("a + b =" + ( a + b));
-         //빼기
-         System.out.println("a - b = " + ( a - b));
-         //곱하기
-         System.out.println("a * b = " + ( a * b));
-         //나누기
-         System.out.println("a / b = " + (a / b));
-         //나누기한 나머지
-         System.out.println("a % b = " + (a % b ));
+        int num1 = 20;
+        int num2 = 30;
 
-    } 
+        System.out.println("더하기" + (num1 + num2));
+        System.out.println("빼기" + (num1 - num2));
+        System.out.println("곱하기" + (num1 * num2));
+        System.out.println("나누기" + (num1 / num2));
+        System.out.println("나머지" + (num1 % num2));
+    }
 }
