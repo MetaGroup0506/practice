@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta.leechanwoo;
+package com.ohgiraffers.leechanwoo;
 
 public class Application1 {
 
