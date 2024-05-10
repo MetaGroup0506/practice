@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.yohanpark;
 
 public class Application2 {
 
@@ -6,6 +6,8 @@ public class Application2 {
 
         /* 계산기 프로그래밍 */
         checkMethod();
+        sumTwoNumber(10,20);
+        multiTwoNumber(10,20);
     }
 
 
@@ -16,25 +18,27 @@ public class Application2 {
         System.out.println("메소드 호출 확인");
     }
 
+    public static String sumTwoNumber(int a, int b) {
 
+        String result = a+"과 " + b +"의 합은 "+(a+b)+"입니다.";
+        System.out.println(result);
+        return result;
+    }
     // 반환값 : String
     // 메소드명 : sumTwoNumber
     // 두개의 전달인자를 받아 두수의 합을 반환
     // 출력의 내용은 "10과 20의 합은 30입니다." 라는 문장을
     // 출력하는 기능
-    public static String sumTwoNumber(int num1, int num2) {
-        int sum = num1 + num2;
-        return num1 + "과 " + num2 + "의 합은 " + sum + "입니다.";
+
+    public static int multiTwoNumber(int a, int b){
+        int mult = a*b;
+        String result = a+"과 " + b +"의 곱은 "+mult+"입니다.";
+        System.out.println(result);
+        return mult;
     }
-
-
     // 반환값 : int
     // 메소드명 : multiTwoNumber
     // 두개의 전달인자를 받아 두수의 곱을 반환
     // 출력의 내용은 "10과 20의 곱은 200입니다." 라는 문장을
     // 출력하는 기능
-    public static int multiTwoNumber(int num1, int num2) {
-        int res = num1 * num2;
-        return res;
-    }
 }

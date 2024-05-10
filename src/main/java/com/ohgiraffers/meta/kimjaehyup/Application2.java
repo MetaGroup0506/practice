@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.meta.kimjaehyup;
 
 public class Application2 {
 
@@ -6,6 +6,8 @@ public class Application2 {
 
         /* 계산기 프로그래밍 */
         checkMethod();
+        sumTwoNumber(20, 10);
+        multiTwoNumber(10, 20);
     }
 
 
@@ -22,9 +24,10 @@ public class Application2 {
     // 두개의 전달인자를 받아 두수의 합을 반환
     // 출력의 내용은 "10과 20의 합은 30입니다." 라는 문장을
     // 출력하는 기능
-    public static String sumTwoNumber(int num1, int num2) {
-        int sum = num1 + num2;
-        return num1 + "과 " + num2 + "의 합은 " + sum + "입니다.";
+    public static String sumTwoNumber(int a, int b) {
+        int sum = a + b;
+        System.out.println(a + "과 "+ b + "의 합은 " + sum + "입니다.");
+        return String.valueOf(sum);
     }
 
 
@@ -33,8 +36,10 @@ public class Application2 {
     // 두개의 전달인자를 받아 두수의 곱을 반환
     // 출력의 내용은 "10과 20의 곱은 200입니다." 라는 문장을
     // 출력하는 기능
-    public static int multiTwoNumber(int num1, int num2) {
-        int res = num1 * num2;
-        return res;
+
+    public static int multiTwoNumber(int a, int b) {
+        int multi = a * b;
+        System.out.println(a + "과 "+ b + "의 곱은 " + multi + "입니다.");
+        return multi;
     }
 }
