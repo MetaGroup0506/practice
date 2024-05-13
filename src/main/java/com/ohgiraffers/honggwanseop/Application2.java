@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta.honggwanseop;
+package com.ohgiraffers.honggwanseop;
 
 public class Application2 {
     public static void main(String[] args) {
