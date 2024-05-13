@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta.kimjaehyup;
+package com.ohgiraffers.kimjaehyup;
 
 public class Application2 {
 

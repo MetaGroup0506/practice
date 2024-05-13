@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta.anjunsu;
+package com.ohgiraffers.anjunsu;
 
 public class Application1 {
 
