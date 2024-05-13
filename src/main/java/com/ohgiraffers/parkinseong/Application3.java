@@ -45,10 +45,11 @@ public class Application3 {
     * */
     public static String printNumber(int number) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("1 이상의 숫자를 입력하세요 : ");
         int input = sc.nextInt();
         sc.nextLine();
         while(input < 1) {
-            System.out.println("Please enter a number");
+            System.out.println("1 이상의 숫자를 입력해주세요");
             input = sc.nextInt();
             sc.nextLine();
         }
@@ -56,6 +57,6 @@ public class Application3 {
         for(int i = 1; i <= number; i++) {
             System.out.printf("%d ", input);
         }
-        System.out.println();
+        return "";
     }
 }
