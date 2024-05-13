@@ -28,7 +28,7 @@ public class Application3 {
      * */
 
     public static String rockPaperScissors() {
-        int num = (int) (Math.random() * 3);
+        int num = (int) (Math.random() * 3); // 0~2
 
         if (num == 0) {
             return "가위";
