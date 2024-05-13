@@ -11,16 +11,16 @@ public class Application3 {
     }
 
     /*
-    * static 메소드로 생성
-    * 반환형 : String
-    * 메소드명 : rockPaperScissors
-    *
-    * 가위 바위 보 중 하나를 출력
-    * (가위, 바위, 보 는 난수를 이용하여 구현)
-    *
-    * -- 출력 --
-    * 가위
-    * */
+     * static 메소드로 생성
+     * 반환형 : String
+     * 메소드명 : rockPaperScissors
+     *
+     * 가위 바위 보 중 하나를 출력
+     * (가위, 바위, 보 는 난수를 이용하여 구현)
+     *
+     * -- 출력 --
+     * 가위
+     * */
     public static String rockPaperScissors(){
         Random random = new Random();
         int gameIndex = (random.nextInt(3)); // 가위,바위,보 3개
