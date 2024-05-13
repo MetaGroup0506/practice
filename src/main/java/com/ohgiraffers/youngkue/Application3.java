@@ -43,6 +43,7 @@ public class Application3 {
         try{
             Scanner sc = new Scanner(System.in);
             num = sc.nextInt();
+            if (num < 1) throw new Exception();
         }catch (Exception e){
             System.out.println("1이상의 숫자를 입력해주세요.");
         }
