@@ -1,6 +1,4 @@
-package com.ohgiraffers.meta;
-
-import static com.ohgiraffers.meta.ImportTest.sum;
+package com.ohgiraffers.SonYoungMin;
 
 public class Application2 {
 
@@ -8,13 +6,9 @@ public class Application2 {
 
         /* 계산기 프로그래밍 */
         checkMethod();
-        String result = sumTwoNumber(10, 20);
-        System.out.println(result);
+        sumTwoNumber(10,20);
+        System.out.println("10과 20의 곱은 "+ multiTwoNumber(10,20) + "입니다.");
 
-        int multi = multiTwoNumber(10, 20);
-        System.out.println("10과 20의 곱은 "+  multi + "입니다.");
-
-        sum(10, 20);
 
     }
 
@@ -32,9 +26,11 @@ public class Application2 {
     // 두개의 전달인자를 받아 두수의 합을 반환
     // 출력의 내용은 "10과 20의 합은 30입니다." 라는 문장을
     // 출력하는 기능
-    public static String sumTwoNumber(int num1, int num2) {
-        int sum = num1 + num2;
-        return num1 + "과 " + num2 + "의 합은 " + sum + "입니다.";
+
+    public static String sumTwoNumber(int first, int second){
+        int sum = first + second;
+        return first + "과 " + second + "의 합은 " + (first + second) +"입니다.";
+
     }
 
 
@@ -43,8 +39,15 @@ public class Application2 {
     // 두개의 전달인자를 받아 두수의 곱을 반환
     // 출력의 내용은 "10과 20의 곱은 200입니다." 라는 문장을
     // 출력하는 기능
-    public static int multiTwoNumber(int num1, int num2) {
-        int res = num1 * num2;
-        return res;
+
+    public static int multiTwoNumber(int first,int second){
+        int multi = first * second;
+        return multi;
     }
+
+
+
+
+
+
 }
