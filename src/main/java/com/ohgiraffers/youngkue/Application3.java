@@ -38,14 +38,13 @@ public class Application3 {
 
     * */
     public static String printNumber(){
-        int num;
-        while (true){
-            System.out.println("1이상의 숫자를 입력하세요 : ");
-            try{
-                Scanner sc = new Scanner(System.in);
-                num = sc.nextInt();
-                if (num > 0) break;
-            }catch (Exception ignored){}
+        int num = 0;
+        System.out.println("1이상의 숫자를 입력하세요 : ");
+        try{
+            Scanner sc = new Scanner(System.in);
+            num = sc.nextInt();
+        }catch (Exception e){
+            System.out.println("1이상의 숫자를 입력해주세요.");
         }
         StringBuilder res = new StringBuilder();
         for (int i = 1; i <= num; i++){
