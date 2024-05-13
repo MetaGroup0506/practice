@@ -7,6 +7,29 @@ public class Sample {
         printMessage("안녕하세요");
         String print = printAge(20);
         System.out.println(print);
+
+        String test = "helloworld";
+        char ch = test.charAt(3);
+        System.out.println("ch = " + ch);
+        char ch2 = test.charAt(4);
+        System.out.println("ch2 = " + ch2);
+
+        String personId = "881122-2234567";
+        char id = personId.charAt(7);
+        System.out.println("id = " + id);
+        // 주민등록번호를 입력받아서 남자인지 여자인지 확인해주세요
+        // 881122-1234567
+        // 881122-2234567
+        // 001122-3
+        // 001122-4
+
+
+
+
+
+
+
+
     }
 
     /***
