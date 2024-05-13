@@ -24,7 +24,6 @@ public class Application3 {
     }
 
     /**
-     * static 메서드로 생성
      * 반환형 : String
      * 메서드명 : printNumber
      *
