@@ -101,4 +101,39 @@ public class ImportTest {
 
     }
 
+
+    /***
+     * 매개변수로 배열을 받아서 출력하는 메소드
+     * @param iarr 출력하기위한 배열
+     */
+    public void printArray(int[] iarr) {
+
+        System.out.println("iarr의 hashCode는 " + iarr.hashCode());
+        iarr[0] = 100;
+        for(int i = 0; i < iarr.length; i++) {
+            System.out.print(iarr[i] + " ");
+        }
+    }
+
+    public String[] returnString(){
+
+        String[] sarr = {"a", "p", "p", "l", "e"};
+
+        System.out.println("sarr.hashCode() = " + sarr.hashCode());
+
+        return sarr;
+    }
+    
+    public int[] printArrayMethod(int[] iarr) {
+
+        System.out.println(">>> iarr의 hashCode는 " + iarr.hashCode());
+        
+        int[] iarr2 = new int[10]; // -> 새로운 주소값 생성
+        System.out.println(">>> iarr2.hashCode() = " + iarr2.hashCode());
+        for(int i = 0; i < iarr.length; i++) {
+            iarr2[i] = iarr[i];
+        }
+        
+        return iarr2;
+    }
 }
