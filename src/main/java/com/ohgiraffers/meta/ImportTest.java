@@ -28,11 +28,9 @@ public class ImportTest {
         int randomNum = random4.nextInt(10) + 1; // 0~9 , 1~ 10
         System.out.println("randomNum = " + randomNum);
     }
-
     public static void sum(int first, int second){
         System.out.println(first + " 와 " + second + "의 합은 " + (first + second) + "입니다.");
     }
-
 
     public void testForExample() {
 
@@ -100,7 +98,6 @@ public class ImportTest {
 
 
     }
-
 
     /***
      * 매개변수로 배열을 받아서 출력하는 메소드
