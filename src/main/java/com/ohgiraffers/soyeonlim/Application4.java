@@ -1,6 +1,4 @@
-package com.ohgiraffers.meta;
-
-import java.util.Scanner;
+package com.ohgiraffers.soyeonlim;
 
 public class Application4 {
 
@@ -25,30 +23,5 @@ public class Application4 {
          * -- 출력 예시 --
          * 준비된 과일이 없습니다.
          * */
-        System.out.println(printFruit());
-
-    }
-
-    public static String printFruit() {
-        String[] fruits = new String[]{"딸기", "바나나", "복숭아", "키위", "사과"};
-        Scanner sc = new Scanner(System.in);
-        int num;
-        while (true) {
-            System.out.print("0에서 4 사이의 숫자를 입력하세요: ");
-            num = sc.nextInt();
-            sc.nextLine(); // 버퍼 비우기
-
-            if (num < 0 || num > 4) {
-                System.out.println("준비된 과일이 없습니다.");
-            } else {
-                break;
-            }
-        }
-
-        String result = new String();
-        for (int i = 0; i <= num; i++) {
-            result = fruits[i];
-        }
-        return result;
     }
 }
