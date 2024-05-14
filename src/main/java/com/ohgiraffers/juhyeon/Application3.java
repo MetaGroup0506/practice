@@ -6,8 +6,7 @@ public class Application3 {
 
     public static void main(String[] args) {
 
-        String result = rockPaperScissors();
-        System.out.println(result);
+        System.out.println(rockPaperScissors());
 
         Scanner sc = new Scanner(System.in);
         System.out.print("숫자를 입력하세요: ");
@@ -16,34 +15,6 @@ public class Application3 {
 
     }
 
-    public static String rockPaperScissors() {
-        Random random = new Random();
-        int choice = random.nextInt(3);
-        System.out.println("random: " + choice);
-
-        switch (choice) {
-            case 0:
-                return "가위";
-            case 1:
-                return "바위";
-            case 2:
-                return "보";
-            default:
-                return "알 수 없음";
-        }
-    }
-
-    public static void printNumber(int number) {
-        if(number < 1) {
-            System.out.println("1 이상의 숫자를 입력해주세요.");
-            return;
-        }
-
-        for(int i = 1; i <= number; i++) {
-            System.out.print(i + " ");
-        }
-
-    }
     /*
     * static 메소드로 생성
     * 반환형 : String
@@ -55,6 +26,21 @@ public class Application3 {
     * -- 출력 --
     * 가위
     * */
+
+    public static String rockPaperScissors() {
+        Random random = new Random();
+        int choice = random.nextInt(3);
+        System.out.println("random: " + choice);
+
+        String str = "";
+        switch(choice) {
+            case 0 -> str = "가위";
+            case 1 -> str = "바위";
+            case 2 -> str = "보";
+            default -> str = "알 수 없음";
+        }
+        return str;
+    }
 
 
     /*
@@ -69,4 +55,16 @@ public class Application3 {
         1 2 3 4 					            1 이상의 숫자를 입력해주세요.
 
     * */
+
+    public static void printNumber(int number) {
+        if(number < 1) {
+            System.out.println("1 이상의 숫자를 입력해주세요.");
+            return;
+        }
+
+        for(int i = 1; i <= number; i++) {
+            System.out.print(i + " ");
+        }
+
+    }
 }
