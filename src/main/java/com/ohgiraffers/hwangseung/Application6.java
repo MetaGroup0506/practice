@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.hwangseung;
 
 import java.util.Scanner;
 
@@ -17,22 +17,18 @@ public class Application6 {
          */
 
         Scanner sc = new Scanner(System.in);
+        System.out.print("주민등록번호를 입력하세요 : ");
+        String num = sc.nextLine();
 
-        System.out.print("주문등록번호를 입력하세요 : ");
-        String str = sc.nextLine();
+        char[] ch = num.toCharArray();
 
-        char[] carr = new char[str.length()];
-
-        for(int i = 0; i < carr.length; i++) {
-            carr[i] = str.charAt(i);
-        }
-
-        for(int i = 0; i < carr.length; i++) {
-
-            if(i >= 8) {
-                carr[i] = '*';
+        for(int i = 0; i < ch.length; i++) {
+            if(i <= 7) {
+                continue;
+            } else {
+                ch[i] = '*';
             }
-            System.out.print(carr[i]);
         }
+        System.out.println(ch);
     }
 }

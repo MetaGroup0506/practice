@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.juhyeon;
 
 import java.util.Scanner;
 
@@ -18,21 +18,23 @@ public class Application6 {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("주문등록번호를 입력하세요 : ");
-        String str = sc.nextLine();
+        System.out.print("주민등록번호를 입력하세요: ");
+        String personId = sc.nextLine();
 
-        char[] carr = new char[str.length()];
 
-        for(int i = 0; i < carr.length; i++) {
-            carr[i] = str.charAt(i);
-        }
+        char[] idArr = new char[personId.length()];
+        // 또는 char[] idArr = personId.toCharArray();
 
-        for(int i = 0; i < carr.length; i++) {
+        for(int i = 0; i < idArr.length; i++) {
+            idArr[i] = personId.charAt(i);
 
-            if(i >= 8) {
-                carr[i] = '*';
+            if(i < 8) {
+                System.out.print(idArr[i]);
+            } else {
+                System.out.print('*');
             }
-            System.out.print(carr[i]);
+
         }
+
     }
 }

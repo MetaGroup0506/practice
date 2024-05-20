@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.juhyeon;
 
 import java.util.Scanner;
 
@@ -17,24 +17,21 @@ public class Application5 {
          * 입력하신 문자열 helloworld에서 찾으시는 문자 l은 3개 입니다.
          * */
 
-        // 문자열을 하나 입력받아 문자 자료형 배열로 바꾼 뒤
         Scanner sc = new Scanner(System.in);
-        System.out.print("문자열을 하나 입력하세요 : ");
-
+        System.out.print("문자열을 하나 입력하세요: ");
         String str = sc.nextLine();
-        char[] carr = new char[str.length()];
-        // 검색할 문자를 하나 입력 받아
-        System.out.print("검색할 문자를 입력하세요 : ");
+
+        System.out.print("검색할 문자를 하나 입력하세요: ");
         char ch = sc.next().charAt(0);
 
+        char[] charArr = str.toCharArray();
+
         int count = 0;
-        for(int i = 0; i < carr.length; i++) {
-            if(carr[i] == ch) {
+        for (char c : charArr) {
+            if (c == ch) {
                 count++;
             }
         }
-
-        System.out.println("입력하신 문자열 " + str + "에서 찾으시는 문자 " + ch + "은" + count + "개 입니다.");
-
+        System.out.printf("입력하신 문자열 %s에서 찾으시는 문자 %c는 %d개 입니다.", str, ch, count);
     }
 }

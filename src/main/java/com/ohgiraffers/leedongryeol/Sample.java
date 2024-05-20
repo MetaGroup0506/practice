@@ -1,4 +1,4 @@
-package com.ohgiraffers.meta;
+package com.ohgiraffers.leedongryeol;
 
 public class Sample {
 
@@ -23,13 +23,9 @@ public class Sample {
         // 001122-3
         // 001122-4
 
-        System.out.println("---============----------============-----------=========");
-        ImportTest importTest = new ImportTest();
-        importTest.returnString();
-        ImportTest importTest2 = new ImportTest();
-        importTest2.returnString();
-        ImportTest importTest3 = new ImportTest();
-        importTest3.returnString();
+
+
+
 
 
 
@@ -50,6 +46,4 @@ public class Sample {
 
         return result; // 어떤 타입으로 선언해야할까???????
     }
-
-    static void test1(){}
 }
