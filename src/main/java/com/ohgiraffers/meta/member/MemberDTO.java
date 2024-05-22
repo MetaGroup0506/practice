@@ -13,6 +13,18 @@ public class MemberDTO {
     public MemberDTO() {
     }
 
+    public MemberDTO(String id, String pwd, String name) {
+        this.id = id;
+        this.pwd = pwd;
+        this.name = name;
+    }
+
+    public MemberDTO(String id, String pwd, String name, int age) {
+
+        this(id, pwd, name);
+        this.age = age;
+    }
+
     public String getId() {
         return id;
     }
@@ -67,5 +79,17 @@ public class MemberDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getInformation() {
+        return "[" +
+                "id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ']';
     }
 }

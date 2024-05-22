@@ -23,6 +23,11 @@ public class Application5 {
 
         String str = sc.nextLine();
         char[] carr = new char[str.length()];
+        for(int i = 0; i < carr.length; i++) {
+            carr[i] = str.charAt(i);
+        }
+
+        str.toCharArray();
         // 검색할 문자를 하나 입력 받아
         System.out.print("검색할 문자를 입력하세요 : ");
         char ch = sc.next().charAt(0);
