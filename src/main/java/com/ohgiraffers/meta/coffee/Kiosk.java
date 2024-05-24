@@ -20,8 +20,8 @@ public class Kiosk {
                 =================
                 선택 : """;
         while(true) {
-            System.out.println(menu);
-            String choice = sc.next();
+            System.out.println(menu); // 메뉴출력
+            String choice = sc.next(); // 선택하기
             Order order = null;
 
             switch (choice) {
