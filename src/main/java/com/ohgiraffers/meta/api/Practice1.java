@@ -5,7 +5,7 @@ public class Practice1 {
     public static void main(String[] args) {
 
         Practice1 p1 = new Practice1();
-//        String result = sp.preChar("hello world");
+//        String result = p1.preChar("hello world");
 //        System.out.println(result);
 //
 //        int num = p1.charSu("application car cable", 'c');
