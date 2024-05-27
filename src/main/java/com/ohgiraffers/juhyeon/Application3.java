@@ -40,6 +40,12 @@ public class Application3 {
             default -> str = "알 수 없음";
         }
         return str;
+
+        /*
+         * int random = (int)(Math.random()*3);
+         * System.out.println("random: " + random);
+         * String result = (random == 0) ? "가위" : (random == 1) ? : "바위" : "보";
+         */
     }
 
 
