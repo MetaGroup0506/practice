@@ -39,13 +39,13 @@ public class Practice1 {
             return -1;
         }
 
-        int count = 0;
+        int cnt = 0;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == cg) {
-                count++;
+                cnt++;
             }
         }
-        return count;
+        return cnt;
     }
 
     // 출력예시
