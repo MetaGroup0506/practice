@@ -1,6 +1,7 @@
 package com.ohgiraffers.kimjonghoon.member;
 
 public class MemberDTO {
+
     private String id;
     private String pwd;
     private String name;
@@ -10,7 +11,18 @@ public class MemberDTO {
     private String email;
 
     public MemberDTO() {
+    }
 
+    public MemberDTO(String id, String pwd, String name) {
+        this.id = id;
+        this.pwd = pwd;
+        this.name = name;
+    }
+
+    public MemberDTO(String id, String pwd, String name, int age) {
+
+        this(id, pwd, name);
+        this.age = age;
     }
 
     public String getId() {
@@ -67,5 +79,30 @@ public class MemberDTO {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getInformation() {
+        return "[" +
+                "id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                ']';
+    }
+
+    @Override
+    public String toString() {
+        return "MemberDTO{" +
+                "id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
