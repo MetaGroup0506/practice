@@ -92,4 +92,17 @@ public class MemberDTO {
                 ", email='" + email + '\'' +
                 ']';
     }
+
+    @Override
+    public String toString() {
+        return "MemberDTO{" +
+                "id='" + id + '\'' +
+                ", pwd='" + pwd + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", phone='" + phone + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }
