@@ -1,10 +1,10 @@
 package com.ohgiraffers.juhyeon.collection;
 
 public class Customer {
-    private String name;
-    private int age;
-    private String gender;
-    private double point;
+    private final String name;
+    private final int age;
+    private final String gender;
+    private final double point;
 
     public Customer(String name, int age, String gender, double point) {
         this.name = name;
