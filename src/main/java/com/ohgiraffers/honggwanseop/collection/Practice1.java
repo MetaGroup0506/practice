@@ -39,7 +39,7 @@ public class Practice1 {
         customerList.add(new Customer("김춘추",38, "남", 2485.6));
         customerList.add(new Customer("신사임당",43,"여",2300.9));
 
-        customerList.addFirst(new Customer("이황",66,"남", 9999.9));
+        customerList.add(new Customer("이황",66,"남", 9999.9));
 
         System.out.println("====== 이름순으로 출력 ======");
         customerList.sort(Comparator.comparing(Customer::getName));
