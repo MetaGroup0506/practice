@@ -35,4 +35,31 @@ public class MemberTest {
         }
         System.out.println("=========================================================================================");
     }
+
+    public void test2() {
+
+        System.out.println(isUserExist("jangbg"));
+        System.out.println(isUserExist("sejong"));
+    }
+
+    public boolean isUserExist(String userId) {
+        return member.containsKey(userId);
+    }
+
+    public void test3() {
+        Member mem = member.get("yooon");
+        mem.setUserPwd("5678");
+        mem.setUserName("윤동주");
+        mem.setAge(27);
+        mem.setPhoneNumber("01034563456");
+
+        System.out.println(mem);
+    }
+
+    private void test4() {
+
+        member.remove("sinsa");
+        System.out.println(member.containsKey("sinsa"));
+    }
+
 }
