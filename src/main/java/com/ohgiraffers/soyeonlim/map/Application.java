@@ -36,23 +36,32 @@ public class Application {
         *   yooon	1234	윤봉길	37	01012341234
         *   jangbg	1234	장보고	29	01012341234
         *   ==================================================
+        *
+        * 2. Map에 저장된 회원 중 인자로 전달할 아이디가 존재하는 여부를 검사하는 메소드를 생성하세요.
+        *    검사 메소드 : com.ohgiraffers.이름.map.member.MemberTest.isUserExist(userId:String):boolean
+        *    요구사항 :
+        *       com.ohgiraffers.이름.map.member.MemberTest.test2()에서 다음 두 아이디를 테스트하세요.
+        *       - jangbg : true 리턴
+        *       - sejong : false 리턴
+        * 3. yooon 아이디 조회 후 해당 객체를 다음과 같이 수정하세요.
+        *    메소드 : com.ohgiraffers.이름.map.member.MemberTest.test3()
+        *
+        *        비밀번호 : 5678
+        *        이름 : 윤동주
+        *        나이 : 27
+        *        전화번호 : 01034563456
+        * 4. sinsa 아이디 회원을 삭제하세요.
+        *    메소드 : com.ohgiraffers.이름.map.member.MemberTest.test4()
         * */
-        Map<String, Member> members = new HashMap<>();
+        MemberTest mt = new MemberTest();
+        mt.test1();
 
-        members.put("honggd", new Member("honggd", "1234", "홍길동", 35, "01012341234"));
-        members.put("sinsa", new Member("sinsa", "1234", "신사임당", 50, "01012341234"));
-        members.put("leess", new Member("leess", "1234", "이순신", 50, "01012341234"));
-        members.put("yooon", new Member("yooon", "1234", "윤봉길", 50, "01012341234"));
-        members.put("jangbg", new Member("jangbg", "1234", "장보고", 50, "01012341234"));
+        mt.test2();
 
-        System.out.println("회원 목록:");
-        System.out.println("=============================================================");
-        System.out.printf("%-8s %-4s %-4s %-15s\n", "ID", "이름", "나이", "전화번호");
-        System.out.println("-------------------------------------------------------------");
-        for (Map.Entry<String, Member> entry : members.entrySet()) {
-            Member member = entry.getValue();
-            System.out.printf("%-8s %-4s %-4d %-15s\n", entry.getKey(), member.getName(), member.getAge(), member.getPhone());
-        }
-        System.out.println("=============================================================");
+        mt.test3();
+        mt.test1();
+
+        mt.test4();
+        mt.test1();
     }
 }
